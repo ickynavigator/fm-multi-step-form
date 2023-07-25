@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <!-- Sidebar start -->
+        <div class="sidebar__text">
+          <span class="sidebar__text-title">Step 1</span>
+          <span class="sidebar__text-subtitle">Your info</span>
+        </div>
+        <div class="sidebar-text">
+          <span class="sidebar__text-title">Step 2</span>
+          <span class="sidebar__text-subtitle">Select plan</span>
+        </div>
+        <div class="sidebar-text">
+          <span class="sidebar__text-title">Step 3</span>
+          <span class="sidebar__text-subtitle">Add-ons</span>
+        </div>
+        <div class="sidebar-text">
+          <span class="sidebar__text-title">Step 4</span>
+          <span class="sidebar__text-subtitle">Summary</span>
+        </div>
+        <!-- Sidebar end -->
+      </div>
+      <div class="main">
+        <!-- Step 1 start -->
+        <section id="step-1">
+          <div class="section-main">
+            <span class="step-title">Personal info</span>
+            <span class="step-subtitle">
+              Please provide your name, email address, and phone number.
+            </span>
+            <div class="input-group">
+              <span class="input-label">
+                <label for="nameInp">Name</label>
+                <span class="input-error hidden" id="nameErr">
+                  This field is required
+                </span>
+              </span>
+              <input
+                type="email"
+                placeholder="e.g. Stephen King"
+                id="nameInp"
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-label">
+                <label for="emailInp">Email Address</label>
+                <span class="input-error hidden" id="emailErr">
+                  This field is required
+                </span>
+              </span>
+              <input
+                type="email"
+                placeholder="e.g. stephenking@lorem.com"
+                id="emailInp"
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-label">
+                <label for="phoneInp">Phone Number</label>
+                <span class="input-error hidden" id="phoneErr">
+                  This field is required
+                </span>
+              </span>
+              <input
+                type="tel"
+                placeholder="e.g. +1 234 567 890"
+                id="phoneInp"
+              />
+            </div>
+          </div>
+
+          <div class="section-controls">
+            <div></div>
+            <button>Next Step</button>
+          </div>
+        </section>
+        <!-- Step 1 end -->
+        <!-- Step 2 start -->
+        <section id="step-2">
+          <span class="step-title">Select your plan</span>
+          <span class="step-subtitle"
+            >You have the option of monthly or yearly billing.</span
+          >
+          <div>
+            <div>
+              <span class="plan-title">Arcade</span>
+              <span class="plan-subtitle">$9/mo</span>
+              <span class="plan-promo">2 months free</span>
+            </div>
+            <div>
+              <span class="plan-title">Advanced</span>
+              <span class="plan-subtitle">$12/mo</span>
+              <span class="plan-promo">2 months free</span>
+            </div>
+            <div>
+              <span class="plan-title">Pro</span>
+              <span class="plan-subtitle">$15/mo</span>
+              <span class="plan-promo">2 months free</span>
+            </div>
+          </div>
+          <div>
+            <span>Monthly</span>
+            <input type="radio" />
+            <span>Yearly</span>
+          </div>
+          Go Back Next Step
+        </section>
+        <!-- Step 2 end -->
+        <!-- Step 3 start -->
+        <section id="step-3">
+          <div class="section-main">
+            <span class="step-title">Pick add-ons</span>
+            <span class="step-subtitle"
+              >Add-ons help enhance your gaming experience.</span
+            >
+            <label class="check-group" for="online-service">
+              <div class="check-group__left">
+                <input type="checkbox" id="online-service" />
+              </div>
+              <div class="check-group__center">
+                <span class="check-group__title">Online service</span>
+                <span class="check-group__subtitle"
+                  >Access to multiplayer games</span
+                >
+              </div>
+              <div class="check-group__right">
+                <span>+$1/mo</span>
+              </div>
+            </label>
+            <label class="check-group" for="larger-storage">
+              <div class="check-group__left">
+                <input type="checkbox" id="larger-storage" />
+              </div>
+              <div class="check-group__center">
+                <span class="check-group__title">Larger storage</span>
+                <span class="check-group__subtitle"
+                  >Extra 1TB of cloud save</span
+                >
+              </div>
+              <div class="check-group__right">
+                <span>+$2/mo</span>
+              </div>
+            </label>
+            <label class="check-group" for="customizable-profile">
+              <div class="check-group__left">
+                <input type="checkbox" id="customizable-profile" />
+              </div>
+              <div class="check-group__center">
+                <span class="check-group__title">Customizable Profile</span>
+                <span class="check-group__subtitle"
+                  >Custom theme on your profile</span
+                >
+              </div>
+              <div class="check-group__right">
+                <span>+$2/mo</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="section-controls">
+            <button>Go Back</button>
+            <button>Next Step</button>
+          </div>
+        </section>
+        <!-- Step 3 end -->
+        <!-- Step 4 start -->
+        <section id="step-4">
+          <span class="step-title">Finishing up</span>
+          <span class="step-subtitle"
+            >Double-check everything looks OK before confirming.</span
+          >
+          <!-- Dynamically add subscription and add-on selections here -->
+          <div id="receipt">
+            <div id="receipt-charges">
+              <div class="receipt-charges__main">
+                <div>
+                  <span class="receipt-charges__main-title"
+                    >Arcade (Yearly)</span
+                  >
+                  <span class="receipt-charges__main-subtitle">Change</span>
+                </div>
+                <div>$90/yr</div>
+              </div>
+              <div class="receipt-charges__sub">
+                <div class="receipt-charges__sub-section">
+                  <span class="receipt-charges__sub-title">Online Service</span>
+                  <span>+$10/yr</span>
+                </div>
+                <div class="receipt-charges__sub-section">
+                  <span class="receipt-charges__sub-title">Larger Storage</span>
+                  <span>+$20/yr</span>
+                </div>
+              </div>
+            </div>
+            <div id="total">
+              <span>Total (per month/year)</span>
+              <span>$120/yr</span>
+            </div>
+          </div>
+          Go Back Confirm
+        </section>
+        <!-- Step 4 end -->
+        <!-- Step 5 start -->
+        <section id="step-5">
+          <h2 class="title">Thank you!</h2>
+          <p class="subtitle">
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </section>
+        <!-- Step 5 end -->
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
