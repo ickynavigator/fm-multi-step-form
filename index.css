@@ -31,6 +31,9 @@ body {
   border-radius: 1rem;
 }
 
+.hidden {
+  display: none;
+}
 .sidebar {
   background-color: blue;
 }
@@ -119,17 +122,12 @@ section {
 /* .check-group > .check-group__right {} */
 
 #step-1 {
-  display: none;
 }
 #step-2 {
-  display: none;
 }
 #step-3 {
-  /* display: none; */
 }
 #step-4 {
-  display: none;
 }
 #step-5 {
-  display: none;
 }
