@@ -118,27 +118,50 @@
             <span class="step-subtitle">
               You have the option of monthly or yearly billing.
             </span>
-            <div>
-              <div>
-                <span class="plan-title">Arcade</span>
-                <span class="plan-subtitle">$9/mo</span>
-                <span class="plan-promo">2 months free</span>
-              </div>
-              <div>
-                <span class="plan-title">Advanced</span>
-                <span class="plan-subtitle">$12/mo</span>
-                <span class="plan-promo">2 months free</span>
-              </div>
-              <div>
-                <span class="plan-title">Pro</span>
-                <span class="plan-subtitle">$15/mo</span>
-                <span class="plan-promo">2 months free</span>
-              </div>
+            <div class="radio-wrapper">
+              <label class="radio-group">
+                <input type="radio" name="plan" />
+                <div>
+                  <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
+                  <div>
+                    <span class="plan-title">Arcade</span>
+                    <span class="plan-subtitle">$9/mo</span>
+                    <span class="plan-promo">2 months free</span>
+                  </div>
+                </div>
+              </label>
+              <label class="radio-group">
+                <input type="radio" name="plan" />
+                <div>
+                  <img src="./assets/images/icon-advanced.svg" alt="Advanced" />
+
+                  <div>
+                    <span class="plan-title">Advanced</span>
+                    <span class="plan-subtitle">$12/mo</span>
+                    <span class="plan-promo">2 months free</span>
+                  </div>
+                </div>
+              </label>
+              <label class="radio-group">
+                <input type="radio" name="plan" />
+                <div>
+                  <img src="./assets/images/icon-pro.svg" alt="Arcade" />
+
+                  <div>
+                    <span class="plan-title">Pro</span>
+                    <span class="plan-subtitle">$15/mo</span>
+                    <span class="plan-promo">2 months free</span>
+                  </div>
+                </div>
+              </label>
             </div>
-            <div>
+            <div class="toggle-wrapper">
               <span>Monthly</span>
-              <input type="radio" />
-              <span>Yearly</span>
+              <label class="switch-group">
+                <input type="checkbox" />
+                <span></span>
+              </label>
+              <span class="selected-plan">Yearly</span>
             </div>
           </div>
 
@@ -255,12 +278,7 @@
         <!-- Step 4 end -->
         <!-- Step 5 start -->
         <section id="step-5" class="hidden">
-          <img
-            src="./assets/images/icon-thank-you.svg"
-            alt="Thank you!"
-            height="70"
-            width="100"
-          />
+          <img src="./assets/images/icon-thank-you.svg" alt="Thank you!" />
           <h2 class="title">Thank you!</h2>
           <p class="subtitle">
             Thanks for confirming your subscription! We hope you have fun using

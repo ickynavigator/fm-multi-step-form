@@ -14,6 +14,9 @@
   --magnolia: hsl(217, 100%, 97%);
   --alabaster: hsl(231, 100%, 99%);
   --white: hsl(0, 0%, 100%);
+
+  --switch-width: 1.2rem;
+  --switch-wrapper-offset: 0.3rem;
 }
 
 * {
@@ -196,6 +199,117 @@ section {
 }
 .input-group > input::placeholder {
   color: var(--cool-gray);
+}
+
+.radio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.radio-group {
+  width: 100%;
+}
+.radio-group > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 12rem;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 0.08rem solid var(--light-gray);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
+.radio-group > input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.radio-group > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.radio-group > input:checked + div {
+  background-color: var(--magnolia);
+  border-color: var(--marine-blue);
+}
+.plan-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--marine-blue);
+}
+.plan-subtitle {
+  font-size: 0.9rem;
+  color: var(--cool-gray);
+}
+.plan-promo {
+  font-size: 0.85rem;
+  color: var(--marine-blue);
+}
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: var(--magnolia);
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  color: var(--cool-gray);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.selected-plan {
+  color: var(--marine-blue);
+}
+
+.switch-group {
+  position: relative;
+  display: inline-block;
+  width: calc(var(--switch-width) * 2);
+  height: var(--switch-width);
+}
+.switch-group > input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch-group > span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: var(--marine-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 1.2rem;
+}
+.switch-group > span:before {
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.15rem;
+
+  content: '';
+  height: calc(var(--switch-width) - var(--switch-wrapper-offset));
+  width: calc(var(--switch-width) - var(--switch-wrapper-offset));
+
+  background-color: var(--white);
+  transition: 0.4s;
+  border-radius: 1rem;
+}
+.switch-group > input:checked + span:before {
+  transform: translateX(
+    calc(var(--switch-width) - var(--switch-wrapper-offset))
+  );
 }
 
 .check-group {
