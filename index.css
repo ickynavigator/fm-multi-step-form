@@ -16,6 +16,11 @@
   --white: hsl(0, 0%, 100%);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -24,7 +29,7 @@ body {
 }
 .container {
   width: 900px;
-  /* height: 500px; */
+  height: 600px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   background-color: var(--white);
@@ -54,15 +59,21 @@ section {
   justify-content: space-between;
 }
 
-.step-title {
+.step-title,
+.title {
   font-size: 1.8rem;
   font-weight: bold;
   color: var(--marine-blue);
+}
+.step-title {
   margin-bottom: 1rem;
 }
-.step-subtitle {
+.step-subtitle,
+.subtitle {
   font-size: 1rem;
   color: var(--cool-gray);
+}
+.step-subtitle {
   margin-bottom: 1rem;
 }
 
@@ -217,4 +228,13 @@ section {
 #step-4 {
 }
 #step-5 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#step-5 > img {
+  margin-bottom: 1rem;
 }
