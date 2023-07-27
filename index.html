@@ -112,32 +112,34 @@
         </section>
         <!-- Step 1 end -->
         <!-- Step 2 start -->
-        <section id="step-2" class="hidden">
-          <span class="step-title">Select your plan</span>
-          <span class="step-subtitle">
-            You have the option of monthly or yearly billing.
-          </span>
-          <div>
+        <section id="step-2" class="">
+          <div class="section-main">
+            <span class="step-title">Select your plan</span>
+            <span class="step-subtitle">
+              You have the option of monthly or yearly billing.
+            </span>
             <div>
-              <span class="plan-title">Arcade</span>
-              <span class="plan-subtitle">$9/mo</span>
-              <span class="plan-promo">2 months free</span>
+              <div>
+                <span class="plan-title">Arcade</span>
+                <span class="plan-subtitle">$9/mo</span>
+                <span class="plan-promo">2 months free</span>
+              </div>
+              <div>
+                <span class="plan-title">Advanced</span>
+                <span class="plan-subtitle">$12/mo</span>
+                <span class="plan-promo">2 months free</span>
+              </div>
+              <div>
+                <span class="plan-title">Pro</span>
+                <span class="plan-subtitle">$15/mo</span>
+                <span class="plan-promo">2 months free</span>
+              </div>
             </div>
             <div>
-              <span class="plan-title">Advanced</span>
-              <span class="plan-subtitle">$12/mo</span>
-              <span class="plan-promo">2 months free</span>
+              <span>Monthly</span>
+              <input type="radio" />
+              <span>Yearly</span>
             </div>
-            <div>
-              <span class="plan-title">Pro</span>
-              <span class="plan-subtitle">$15/mo</span>
-              <span class="plan-promo">2 months free</span>
-            </div>
-          </div>
-          <div>
-            <span>Monthly</span>
-            <input type="radio" />
-            <span>Yearly</span>
           </div>
 
           <div class="section-controls">
@@ -204,38 +206,44 @@
         </section>
         <!-- Step 3 end -->
         <!-- Step 4 start -->
-        <section id="step-4" class="">
-          <span class="step-title">Finishing up</span>
-          <span class="step-subtitle">
-            Double-check everything looks OK before confirming.
-          </span>
-          <!-- Dynamically add subscription and add-on selections here -->
-          <div class="receipt">
-            <div class="receipt-charges">
-              <div class="receipt-charges__main space-between">
-                <div>
-                  <span class="receipt-charges__main-title">
-                    Arcade (Yearly)
-                  </span>
-                  <span class="receipt-charges__main-subtitle">Change</span>
+        <section id="step-4" class="hidden">
+          <div class="section-main">
+            <span class="step-title">Finishing up</span>
+            <span class="step-subtitle">
+              Double-check everything looks OK before confirming.
+            </span>
+            <!-- Dynamically add subscription and add-on selections here -->
+            <div class="receipt">
+              <div class="receipt-charges">
+                <div class="receipt-charges__main space-between">
+                  <div>
+                    <span class="receipt-charges__main-title">
+                      Arcade (Yearly)
+                    </span>
+                    <span class="receipt-charges__main-subtitle">Change</span>
+                  </div>
+                  <div>$90/yr</div>
                 </div>
-                <div>$90/yr</div>
+                <hr />
+                <div class="receipt-charges__sub">
+                  <div class="receipt-charges__sub-section space-between">
+                    <span class="receipt-charges__sub-title"
+                      >Online Service</span
+                    >
+                    <span>+$10/yr</span>
+                  </div>
+                  <div class="receipt-charges__sub-section space-between">
+                    <span class="receipt-charges__sub-title"
+                      >Larger Storage</span
+                    >
+                    <span>+$20/yr</span>
+                  </div>
+                </div>
               </div>
-              <hr />
-              <div class="receipt-charges__sub">
-                <div class="receipt-charges__sub-section space-between">
-                  <span class="receipt-charges__sub-title">Online Service</span>
-                  <span>+$10/yr</span>
-                </div>
-                <div class="receipt-charges__sub-section space-between">
-                  <span class="receipt-charges__sub-title">Larger Storage</span>
-                  <span>+$20/yr</span>
-                </div>
+              <div class="receipt-total space-between">
+                <span>Total (per year)</span>
+                <span>$120/yr</span>
               </div>
-            </div>
-            <div class="receipt-total space-between">
-              <span>Total (per year)</span>
-              <span>$120/yr</span>
             </div>
           </div>
 
