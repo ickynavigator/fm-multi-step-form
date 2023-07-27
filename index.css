@@ -20,6 +20,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 html {
   font-family: 'Ubuntu', sans-serif;
@@ -107,6 +108,32 @@ section {
 .section-controls {
   display: flex;
   justify-content: space-between;
+}
+.btn {
+  background-color: var(--marine-blue);
+  border: none;
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--pastel-blue);
+  cursor: pointer;
+}
+.btn-secondary {
+  background-color: var(--purplish-blue);
+}
+.btn-alternate {
+  padding-left: 0;
+  background-color: inherit;
+  color: var(--cool-gray);
+}
+.btn-alternate:hover {
+  background-color: inherit;
+  color: var(--marine-blue);
 }
 
 .step-title,

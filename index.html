@@ -58,7 +58,7 @@
       </ol>
       <div class="main">
         <!-- Step 1 start -->
-        <section id="step-1" class="">
+        <section id="step-1" class="hidden">
           <div class="section-main">
             <span class="step-title">Personal info</span>
             <span class="step-subtitle">
@@ -107,16 +107,16 @@
 
           <div class="section-controls">
             <div></div>
-            <button>Next Step</button>
+            <button class="btn">Next Step</button>
           </div>
         </section>
         <!-- Step 1 end -->
         <!-- Step 2 start -->
         <section id="step-2" class="hidden">
           <span class="step-title">Select your plan</span>
-          <span class="step-subtitle"
-            >You have the option of monthly or yearly billing.</span
-          >
+          <span class="step-subtitle">
+            You have the option of monthly or yearly billing.
+          </span>
           <div>
             <div>
               <span class="plan-title">Arcade</span>
@@ -139,7 +139,11 @@
             <input type="radio" />
             <span>Yearly</span>
           </div>
-          Go Back Next Step
+
+          <div class="section-controls">
+            <button class="btn btn-alternate">Go Back</button>
+            <button class="btn">Next Step</button>
+          </div>
         </section>
         <!-- Step 2 end -->
         <!-- Step 3 start -->
@@ -194,13 +198,13 @@
           </div>
 
           <div class="section-controls">
-            <button>Go Back</button>
-            <button>Next Step</button>
+            <button class="btn btn-alternate">Go Back</button>
+            <button class="btn">Next Step</button>
           </div>
         </section>
         <!-- Step 3 end -->
         <!-- Step 4 start -->
-        <section id="step-4" class="hidden">
+        <section id="step-4" class="">
           <span class="step-title">Finishing up</span>
           <span class="step-subtitle">
             Double-check everything looks OK before confirming.
@@ -234,7 +238,11 @@
               <span>$120/yr</span>
             </div>
           </div>
-          Go Back Confirm
+
+          <div class="section-controls">
+            <button class="btn btn-alternate">Go Back</button>
+            <button class="btn btn-secondary">Confirm</button>
+          </div>
         </section>
         <!-- Step 4 end -->
         <!-- Step 5 start -->
