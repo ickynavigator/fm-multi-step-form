@@ -135,7 +135,7 @@
         </section>
         <!-- Step 2 end -->
         <!-- Step 3 start -->
-        <section id="step-3" class="">
+        <section id="step-3" class="hidden">
           <div class="section-main">
             <span class="step-title">Pick add-ons</span>
             <span class="step-subtitle">
@@ -192,36 +192,37 @@
         </section>
         <!-- Step 3 end -->
         <!-- Step 4 start -->
-        <section id="step-4" class="hidden">
+        <section id="step-4" class="">
           <span class="step-title">Finishing up</span>
-          <span class="step-subtitle"
-            >Double-check everything looks OK before confirming.</span
-          >
+          <span class="step-subtitle">
+            Double-check everything looks OK before confirming.
+          </span>
           <!-- Dynamically add subscription and add-on selections here -->
-          <div id="receipt">
-            <div id="receipt-charges">
-              <div class="receipt-charges__main">
+          <div class="receipt">
+            <div class="receipt-charges">
+              <div class="receipt-charges__main space-between">
                 <div>
-                  <span class="receipt-charges__main-title"
-                    >Arcade (Yearly)</span
-                  >
+                  <span class="receipt-charges__main-title">
+                    Arcade (Yearly)
+                  </span>
                   <span class="receipt-charges__main-subtitle">Change</span>
                 </div>
                 <div>$90/yr</div>
               </div>
+              <hr />
               <div class="receipt-charges__sub">
-                <div class="receipt-charges__sub-section">
+                <div class="receipt-charges__sub-section space-between">
                   <span class="receipt-charges__sub-title">Online Service</span>
                   <span>+$10/yr</span>
                 </div>
-                <div class="receipt-charges__sub-section">
+                <div class="receipt-charges__sub-section space-between">
                   <span class="receipt-charges__sub-title">Larger Storage</span>
                   <span>+$20/yr</span>
                 </div>
               </div>
             </div>
-            <div id="total">
-              <span>Total (per month/year)</span>
+            <div class="receipt-total space-between">
+              <span>Total (per year)</span>
               <span>$120/yr</span>
             </div>
           </div>
