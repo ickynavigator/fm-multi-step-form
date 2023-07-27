@@ -37,7 +37,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 .sidebar {
   background-color: blue;
