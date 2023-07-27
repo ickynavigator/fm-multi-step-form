@@ -40,6 +40,12 @@ body {
 .hidden {
   display: none !important;
 }
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -50,21 +56,15 @@ body {
   /* url("./assets/images/bg-sidebar-desktop.svg")  */
   background: url('./assets/images/bg-sidebar-desktop.svg') no-repeat center
     center;
-}
-ol.sidebar {
   list-style-type: none;
   counter-reset: step;
 }
-ol.sidebar li {
+.sidebar__text {
   counter-increment: step;
   display: flex;
   text-transform: uppercase;
 }
-ol.sidebar li.sidebar-selected::before {
-  background: var(--pastel-blue);
-  color: var(--marine-blue);
-}
-ol.sidebar li::before {
+.sidebar__text::before {
   content: counter(step);
   width: 2rem;
   height: 2rem;
@@ -74,6 +74,10 @@ ol.sidebar li::before {
   color: white;
   text-align: center;
   margin-right: 0.5rem;
+}
+.sidebar__text.sidebar-selected::before {
+  background: var(--pastel-blue);
+  color: var(--marine-blue);
 }
 
 .sidebar .sidebar__text > div {
@@ -276,7 +280,6 @@ section {
   font-size: 0.9rem;
   color: var(--marine-blue);
 }
-
 .receipt-total {
   padding: 1.5rem 1.5rem;
 }
@@ -288,12 +291,6 @@ section {
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--marine-blue);
-}
-
-.space-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #step-1 {
