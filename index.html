@@ -28,29 +28,37 @@
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
+      <ol class="sidebar">
         <!-- Sidebar start -->
-        <div class="sidebar__text">
-          <span class="sidebar__text-title">Step 1</span>
-          <span class="sidebar__text-subtitle">Your info</span>
-        </div>
-        <div class="sidebar-text">
-          <span class="sidebar__text-title">Step 2</span>
-          <span class="sidebar__text-subtitle">Select plan</span>
-        </div>
-        <div class="sidebar-text">
-          <span class="sidebar__text-title">Step 3</span>
-          <span class="sidebar__text-subtitle">Add-ons</span>
-        </div>
-        <div class="sidebar-text">
-          <span class="sidebar__text-title">Step 4</span>
-          <span class="sidebar__text-subtitle">Summary</span>
-        </div>
+        <li class="sidebar__text sidebar-selected">
+          <div>
+            <span class="sidebar__text-title">Step 1</span>
+            <span class="sidebar__text-subtitle">Your info</span>
+          </div>
+        </li>
+        <li class="sidebar__text">
+          <div>
+            <span class="sidebar__text-title">Step 2</span>
+            <span class="sidebar__text-subtitle">Select plan</span>
+          </div>
+        </li>
+        <li class="sidebar__text">
+          <div>
+            <span class="sidebar__text-title">Step 3</span>
+            <span class="sidebar__text-subtitle">Add-ons</span>
+          </div>
+        </li>
+        <li class="sidebar__text">
+          <div>
+            <span class="sidebar__text-title">Step 4</span>
+            <span class="sidebar__text-subtitle">Summary</span>
+          </div>
+        </li>
         <!-- Sidebar end -->
-      </div>
+      </ol>
       <div class="main">
         <!-- Step 1 start -->
-        <section id="step-1" class="hidden">
+        <section id="step-1" class="">
           <div class="section-main">
             <span class="step-title">Personal info</span>
             <span class="step-subtitle">
@@ -230,7 +238,7 @@
         </section>
         <!-- Step 4 end -->
         <!-- Step 5 start -->
-        <section id="step-5" class="">
+        <section id="step-5" class="hidden">
           <img
             src="./assets/images/icon-thank-you.svg"
             alt="Thank you!"

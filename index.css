@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
   /* Primary */
@@ -28,7 +28,7 @@ body {
   background-color: var(--magnolia);
 }
 .container {
-  width: 900px;
+  width: 1000px;
   height: 600px;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -40,7 +40,57 @@ body {
   display: none !important;
 }
 .sidebar {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  /* url("./assets/images/bg-sidebar-desktop.svg")  */
+  background: url('./assets/images/bg-sidebar-desktop.svg') no-repeat center
+    center;
+}
+ol.sidebar {
+  list-style-type: none;
+  counter-reset: step;
+}
+ol.sidebar li {
+  counter-increment: step;
+  display: flex;
+  text-transform: uppercase;
+}
+ol.sidebar li.sidebar-selected::before {
+  background: var(--pastel-blue);
+  color: var(--marine-blue);
+}
+ol.sidebar li::before {
+  content: counter(step);
+  width: 2rem;
+  height: 2rem;
+  border: 0.08rem solid var(--pastel-blue);
+  border-radius: 50%;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.sidebar .sidebar__text > div {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.sidebar__text-title {
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: var(--white);
+}
+.sidebar__text-subtitle {
+  font-size: 0.9rem;
+  font-weight: 450;
+  letter-spacing: 1px;
+  color: var(--white);
 }
 
 section {
